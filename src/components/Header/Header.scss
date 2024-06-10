@@ -17,9 +17,9 @@
     gap: 1.5rem;
 
     @include tablet {
-      flex-direction: row;
-      gap: 5rem;
-      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+      max-width: 600px;
     }
   }
 
@@ -35,7 +35,6 @@
     font-size: 1.75rem;
     letter-spacing: 2px;
     margin: 0;
-    text-align: center;
 
     @include tablet {
       font-size: 2rem;
@@ -43,21 +42,9 @@
   }
 
   &__group {
-    @include flex($justify: space-between, $align: center);
+    @include flex($justify: center);
     gap: 1.5rem;
-    padding: 0 1rem;
     width: 100%;
-
-    @include tablet {
-      justify-content: flex-end;
-      padding: 0;
-      width: auto;
-    }
-  }
-
-  &__score {
-    font-size: 0.8rem;
-    margin: 0;
-    text-transform: uppercase;
+    padding: 0;
   }
 }
