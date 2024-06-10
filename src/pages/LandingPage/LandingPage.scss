@@ -40,7 +40,7 @@
   }
 
   &__buttons {
-    @include flex($justify: flex-end);
+    @include flex($justify: center);
     gap: 1rem;
 
     @include tablet {
