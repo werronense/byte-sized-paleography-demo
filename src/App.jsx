@@ -1,7 +1,9 @@
-import './App.scss'
+import "./App.scss";
+
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 function App() {
-  return <p>Hello, Byte-Sized Medieval Paleography Demo!</p>;
+  return <LandingPage />;
 }
 
-export default App
+export default App;
