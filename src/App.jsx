@@ -1,7 +1,19 @@
-import './App.scss'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./App.scss";
+
+import LandingPage from "./pages/LandingPage/LandingPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
-  return <p>Hello, Byte-Sized Medieval Paleography Demo!</p>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
