@@ -91,6 +91,7 @@ const TranscriptionPage = () => {
               value={userInput}
               onChange={handleInputChange}
               autoComplete="off"
+              autoCapitalize="off"
             ></input>
             <div className="transcription__controls">
               <Btn
