@@ -7,6 +7,8 @@ import Header from "./components/Header/Header";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

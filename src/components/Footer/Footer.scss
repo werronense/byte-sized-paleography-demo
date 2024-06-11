@@ -49,4 +49,11 @@
       }
     }
   }
+
+  &__link,
+  &__link:visited {
+    color: $light-tertiary;
+    border-bottom: 1px solid $light-tertiary;
+    text-decoration: none;
+  }
 }
